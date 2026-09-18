@@ -10,84 +10,71 @@ import Reveal from "./Reveal";
 
 const SKILLS = [
   {
-    group: "Backend",
-    items: ["PHP", "CodeIgniter 4", "REST APIs", "Query Builder & raw SQL", "Session & role-based auth"],
-  },
-  {
-    group: "Data & Ops",
-    items: ["MySQL / MariaDB", "PhpSpreadsheet", "RFID & QR integration", ".env credential hygiene", "Git & GitHub"],
-  },
-  {
-    group: "Frontend",
-    items: ["JavaScript", "jQuery", "Bootstrap", "Chart.js dashboards", "Responsive layouts"],
+    group: "Technical & Data",
+    items: ["Data Analysis & Interpretation", "Microsoft Excel (Intermediate)", "Quantitative Reporting", "Operations Management", "Financial Reconciliation"],
   },
   {
     group: "Domain",
-    items: ["LGU payroll & compliance", "Disaster relief logistics", "Resident records", "Fleet & transit systems"],
+    items: ["Energy Finance", "Facilities Management", "Telecommunications", "Quality Compliance", "Supply Chain Optimization"],
+  },
+  {
+    group: "Soft Skills",
+    items: ["Client & Stakeholder Management", "Analytical Thinking", "Communication & Negotiation", "Leadership", "Problem Solving", "Adaptability"],
   },
 ];
 
 const WHAT_I_CAN_DO = [
   {
-    group: "IT, Web Development & QA",
+    group: "Operations & Quality Oversight",
     description:
-      "Building and testing functional digital systems, from database-driven web applications to RFID and QR-based solutions, with a focus on reliability, usability, and practical problem-solving.",
+      "Directing operational strategy, vendor compliance, and enforcing strict quality compliance frameworks across multi-site assets and industrial processes to sustain zero-downtime service delivery.",
     visual: "qa",
     size: "large",
     items: [
-      "Web Development",
-      "System Testing",
-      "Bug Identification",
-      "System Analysis",
-      "Database Management",
-      "MySQL",
-      "PHP",
-      "Python",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "RFID & QR Integration",
+      "Operations Management",
+      "Quality Compliance",
+      "Risk Management",
+      "Vendor Management",
+      "Supply Chain Delivery",
+      "Facility Management",
+      "Zero-Downtime Delivery",
     ],
   },
   {
-    group: "VA & Digital Operations",
-    description: "Supporting teams with organized data, documentation, research, and digital workflows while helping keep day-to-day operations accurate and efficient.",
+    group: "Financial Reconciliation & Data Reporting",
+    description:
+      "Building Excel tracking and reporting models, conducting multi-site asset audits to mitigate financial leakages, and translating operational data into commercial insight for executive decision-making.",
     visual: "va",
     items: [
-      "Data Entry",
-      "Data Validation",
-      "Document Management",
-      "Online Research",
-      "Administrative Support",
-      "Google Workspace",
-      "Social Media Management",
-      "Content Optimization",
+      "Data Analysis",
+      "Financial Reconciliation",
+      "Quantitative Reporting",
+      "Microsoft Excel",
+      "Applied Econometrics",
+      "Audit Frameworks",
     ],
   },
 ];
 
 const SOCIALS = [
-  { label: "Email", value: "miculobrichardvictor@gmail.com", href: "mailto:miculobrichardvictor@gmail.com", icon: Mail, color: "#000000" },
-  { label: "GitHub", value: "github.com/chardoxx-3", href: "https://github.com/chardoxx-3", icon: Github, color: "#000000" },
-  { label: "LinkedIn", value: "linkedin.com/in/richard-victor-miculob", href: "https://www.linkedin.com/in/richard-victor-miculob/", icon: Linkedin, color: "#000000" },
+  { label: "Email", value: "tunmisemayowa3@gmail.com", href: "mailto:tunmisemayowa3@gmail.com", icon: Mail, color: "#000000" },
+  { label: "Phone", value: "+234 903 283 6299", href: "tel:+2349032836299", icon: ExternalLink, color: "#000000" },
+  { label: "LinkedIn", value: "LinkedIn Profile", href: "#", icon: Linkedin, color: "#000000" },
 ];
 
 const CARDS = [
-  "Problem Solver",
+  "Analytical Thinker",
   "Detail-Oriented",
-  "Reliable",
-  "Organized",
-  "Curious",
-  "Quick Learner",
-  "Creative",
+  "Problem Solver",
+  "Data-Driven",
   "Adaptable",
-  "User-Focused",
-  "Open to Feedback",
+  "Negotiator",
+  "Growth-Oriented",
+  "Leader",
+  "Strategic",
+  "Client-Focused",
 ];
 
-// Fixed "chaotic" rotation/offset per card so each trait keeps its own
-// scattered position as it cycles through the stack (looks like a messy
-// pile of photos rather than a neat deck).
 const CARD_SCATTER = [
   { rot: -7, x: 6, y: -4 },
   { rot: 5, x: -8, y: 3 },
@@ -102,114 +89,51 @@ const CARD_SCATTER = [
 ];
 
 const CURRENTLY = [
-  { icon: Code2, label: "Building", detail: "Web & digital projects" },
-  { icon: FlaskConical, label: "Exploring", detail: "Software testing & QA" },
-  { icon: Rocket, label: "Learning", detail: "Full-stack development" },
+  { icon: GraduationCap, label: "Studying", detail: "M.Sc. Energy Finance" },
+  { icon: FlaskConical, label: "Analyzing", detail: "Energy Finance & Applied Econometrics" },
+  { icon: Rocket, label: "Executing", detail: "Industrial Operations & Compliance" },
 ];
 
 const EXPERIENCE = [
   {
-    title: "On-the-job Training",
-    org: "Department of Information and Communications Technology",
-    date: "January to May 2026",
-    desc: "Completed 600 hours of OJT at DICT, gaining experience in technical support, field operations, event coordination, and system development. Assisted with Free Wi-Fi for All deployments, data cabinet assembly, internet speed testing, and launching event preparation. Helped develop DocuTrack and ResQR, including beneficiary data gathering, simulation, and project presentation.",
-    certificates: [
-      { name: "Certificate of Completion", link: "/certificates/On-the-job_Training.pdf" },
-      { name: "Certificate of Recognition", link: "/certificates/Digital_Innovation_Award.pdf" },
-    ],
-    images: [
-      "/images/experience/ojt/1.jpg",
-      "/images/experience/ojt/2.jpg",
-      "/images/experience/ojt/3.jpg",
-      "/images/experience/ojt/4.jpg",
-      "/images/experience/ojt/5.jpeg",
-    ],
+    title: "Electrical Engineer",
+    org: "National Agricultural Seeds Council (NASC)",
+    date: "May 2025 - Present",
+    desc: "Led operational oversight for industrial-scale processing exceeding 100 tons per cycle; partnered with institutional stakeholders (Flour Mills Nigeria) to audit and enforce strict quality compliance frameworks. Managed stakeholder relationships to streamline supply chain delivery, resolving operational bottlenecks across organizational bounds.",
+    certificates: [],
+    images: [],
   },
   {
-    title: "General Virtual Assistance 2.0",
-    subtitle: "A Paradigm Shift in AI-Powered Interaction",
-    org: "Department of Information and Communications Technology",
-    date: "April to May 2026",
-    imageLeft: true,
-    desc: "Completed a 20-day intensive virtual assistance training focused on VA fundamentals, client communication, productivity, AI-powered workflows, and social media management. Gained hands-on experience in niche development, content creation, page management, post scheduling, client outreach, and improving workflows to deliver efficient virtual assistance services.",
-    certificates: [
-      { name: "Certificate of Completion", link: "/certificates/Virtual_Assistance.pdf" },
-    ],
-    images: [
-      "/images/experience/va/1.jpg",
-      "/images/experience/va/2.jpg",
-    ],
+    title: "Facility Manager (Fill-In Roles)",
+    org: "Alpha Mead Group",
+    date: "Dec 2023 - Dec 2024",
+    desc: "Directed operational strategy and vendor contract compliance for premium corporate accounts (Ecobank Training Centre, Living Gold Terraces, Banana Island), ensuring zero downtime through proactive risk management.",
+    certificates: [],
+    images: [],
   },
   {
-    title: "Tech-Tuesdays",
-    org: "Department of Information and Communications Technology",
-    date: "March 31, 2026",
-    desc: "Participated in a team-based digital solution development activity focused on addressing the needs of local MSMEs and the tourism sector. Contributed to the development and presentation of an online platform designed to showcase and promote local MSME products. Gained experience in collaborative problem-solving, digital solution design, and pitching technology-based solutions.",
-    certificates: [
-      { name: "Certificate of Appreciation", link: "/certificates/Tech-Tuesdays.pdf" },
-    ],
-    images: [
-      "/images/experience/techtuesday/1.jpg",
-      "/images/experience/techtuesday/2.jpg",
-    ],
+    title: "Data & Audit Specialist / Financial Reconciler",
+    org: "IHS Towers & Airtel Partnerships / Alpha Mead Group",
+    date: "Jan 2023 - Nov 2023",
+    desc: "Designed and executed a data-driven audit framework across multi-site assets, identifying resource variances and directly mitigating over $3,000,000 in financial leakages. Built tracking and reporting models in Excel, cutting manual data anomalies and accelerating management reporting by 50%. Maintained collaborative working relationships with corporate clients including IHS Towers and Airtel, reconciling accounts and resolving operational issues.",
+    certificates: [],
+    images: [],
   },
   {
-    title: "HACK FOR GOV 4",
-    org: "Department of Information and Communications Technology",
-    date: "November 10, 2025",
-    imageLeft: true,
-    desc: "Participated in a 9-hour Capture the Flag (CTF) cybersecurity competition involving hands-on challenges in identifying vulnerabilities, analyzing systems, and finding hidden flags. Developed practical skills in cybersecurity, ethical hacking, logical reasoning, troubleshooting, and time-constrained problem-solving.",
-    certificates: [
-      { name: "Certificate of Participation", link: "/certificates/Hack_for_Gov.pdf" },
-    ],
-    images: [
-      "/images/experience/hackforgov/1.jpg",
-      "/images/experience/hackforgov/2.jpg",
-      "/images/experience/hackforgov/3.jpg",
-      "/images/experience/hackforgov/4.jpg",
-      "/images/experience/hackforgov/5.jpg",
-    ],
-  },
-  {
-    title: "AI Ideas for Impact",
-    org: "Department of Information and Communications Technology",
-    date: "September 23-24, 2025",
-    desc: "Participated in a digital innovation activity focused on applying artificial intelligence to improve existing systems and workflows. Collaborated with a team to develop and present an AI-powered solution designed to make processes more efficient, faster, and accessible. Awarded the Special Award for Most Promising Prototype for demonstrating strong potential, innovation, and practical impact.",
-    certificates: [
-      { name: "Certificate of Participation", link: "/certificates/AIdeas.pdf" },
-      { name: "Most Promising Prototype", link: "/certificates/Most_Promising_Prototype.pdf" },
-    ],
-    images: [
-      "/images/experience/aideas/1.jpg",
-      "/images/experience/aideas/2.jpg",
-      "/images/experience/aideas/3.jpg",
-      "/images/experience/aideas/4.jpg",
-      "/images/experience/aideas/5.jpg",
-    ],
-  },
-  {
-    title: "Reverse Pitching",
-    org: "Department of Information and Communications Technology",
-    date: "June 25-26, 2025",
-    imageLeft: true,
-    desc: "Participated in a reverse-pitching activity where participants selected real-world problems presented by organizations and developed technology-driven solutions to address them. Contributed to the development and presentation of a digital platform concept aimed at improving the efficiency of municipal and MSME operations.",
-    certificates: [
-      { name: "Certificate of Participation", link: "/certificates/Reverse_Pitching.pdf" },
-    ],
-    images: [
-      "/images/experience/reverse/1.jpg",
-      "/images/experience/reverse/2.jpg",
-      "/images/experience/reverse/3.jpg",
-      "/images/experience/reverse/4.jpg",
-    ],
+    title: "Staff Officer / Administrative Support",
+    org: "Huawei Technologies",
+    date: "Mar 2024 - Jun 2024",
+    desc: "Coordinated scheduling and operations across 30+ meeting spaces daily using digital facility management systems. Supported rollout of a scan-to-book reservation system, reducing manual process errors and improving operational efficiency.",
+    certificates: [],
+    images: [],
   },
 ];
 
-// Same click-to-flick mechanic as the About-me trait cards: the front image
-// flies off and the next one in the pile takes its place.
 function ExperienceImageStack({ images, title }) {
   const [index, setIndex] = useState(0);
   const count = images.length;
+
+  if (count === 0) return null;
 
   return (
     <div
@@ -219,7 +143,6 @@ function ExperienceImageStack({ images, title }) {
       {images.map((src, i) => {
         const offset = (i - index + count) % count;
         const isExiting = offset === count - 1;
-        // Only the front 3 images and the one that just got flicked away are rendered.
         if (offset > 2 && !isExiting) return null;
 
         const scatter = CARD_SCATTER[i % CARD_SCATTER.length];
@@ -237,8 +160,8 @@ function ExperienceImageStack({ images, title }) {
         } else {
           const depth = offset;
           const isFront = depth === 0;
-          const calm = 0.4; // dampens the scatter chaos for the album stack
-          const dir = depth % 2 === 1 ? -1 : 1; // alternate: mid card peeks up, back card peeks down
+          const calm = 0.4;
+          const dir = depth % 2 === 1 ? -1 : 1;
           style = {
             "--tx": isFront ? "0px" : `${scatter.x * calm + depth * 8}px`,
             "--ty": isFront ? "0px" : `${scatter.y * calm + dir * depth * 10}px`,
@@ -263,9 +186,6 @@ function ExperienceImageStack({ images, title }) {
   );
 }
 
-// Mobile-only stacked album for the Work Gallery — same click-to-flick
-// mechanic as the Experience section's image stack, but cycling through
-// project cover images instead of a single experience's photos.
 function WorkAlbumStack({ projects, activeIndex, onAdvance }) {
   const count = projects.length;
 
@@ -274,7 +194,6 @@ function WorkAlbumStack({ projects, activeIndex, onAdvance }) {
       {projects.map((project, i) => {
         const offset = (i - activeIndex + count) % count;
         const isExiting = offset === count - 1;
-        // Only the front 3 cards and the one that just got flicked away are rendered.
         if (offset > 2 && !isExiting) return null;
 
         const scatter = CARD_SCATTER[i % CARD_SCATTER.length];
@@ -292,8 +211,8 @@ function WorkAlbumStack({ projects, activeIndex, onAdvance }) {
         } else {
           const depth = offset;
           const isFront = depth === 0;
-          const calm = 0.4; // dampens the scatter chaos for the album stack
-          const dir = depth % 2 === 1 ? -1 : 1; // alternate: mid card peeks up, back card peeks down
+          const calm = 0.4;
+          const dir = depth % 2 === 1 ? -1 : 1;
           style = {
             "--tx": isFront ? "0px" : `${scatter.x * calm + depth * 8}px`,
             "--ty": isFront ? "0px" : `${scatter.y * calm + dir * depth * 10}px`,
@@ -324,7 +243,7 @@ export default function Portfolio() {
   const rootRef = useRef(null);
   const marqueeTrackRef = useRef(null);
   const heroRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [cardIndex, setCardIndex] = useState(0);
   const [cardPaused, setCardPaused] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -332,7 +251,7 @@ export default function Portfolio() {
   const [formStatus, setFormStatus] = useState("idle");
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const activeProject = PROJECTS[activeIndex];
+  const activeProject = PROJECTS[activeIndex] || PROJECTS[0];
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -363,13 +282,10 @@ export default function Portfolio() {
     if (!track) return;
 
     const syncMarqueeSpeed = () => {
-      const enterSeconds = 8; // matches marquee-enter duration in CSS
-      const pxPerSecond = window.innerWidth / enterSeconds; // entrance travels 100vw in 4s
-      const loopDistance = track.scrollWidth / 2; // loop travels -50% of the doubled track
+      const enterSeconds = 8;
+      const pxPerSecond = window.innerWidth / enterSeconds;
+      const loopDistance = track.scrollWidth / 2;
       const loopSeconds = loopDistance / pxPerSecond;
-      // Set on the hero section (not the track itself) so every bg-name-track
-      // descendant -- the center row and all mobile fill rows -- inherits the
-      // exact same duration and stays in perfect sync as one cohesive animation.
       heroRef.current?.style.setProperty("--marquee-loop-duration", `${loopSeconds}s`);
     };
 
@@ -387,10 +303,7 @@ export default function Portfolio() {
   }, [cardPaused]);
 
   return (
-    <div
-  ref={rootRef}
-  className="portfolio-root"
->
+    <div ref={rootRef} className="portfolio-root">
       <svg className="bg-lines" viewBox="0 0 1440 5000" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style={{width:'100%',height:'100%'}}>
         <g opacity="0.28">
           <path d="M-100 200 C 200 100, 500 300, 800 200 C 1100 100, 1300 280, 1540 180" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
@@ -402,52 +315,18 @@ export default function Portfolio() {
           <path d="M-100 850 C 260 780, 560 920, 860 860 C 1160 800, 1380 940, 1540 880" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
           <path d="M0 1000 C 300 940, 600 1060, 900 1000 C 1200 940, 1400 1080, 1440 1020" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
         </g>
-        <g opacity="0.22">
-          <path d="M-120 1250 C 200 1180, 500 1320, 820 1260 C 1140 1200, 1340 1340, 1560 1280" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 1400 C 280 1340, 580 1460, 880 1400 C 1180 1340, 1380 1480, 1440 1420" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-          <path d="M-60 1550 C 240 1490, 540 1610, 840 1550 C 1140 1490, 1360 1630, 1500 1570" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 1700 C 320 1640, 620 1760, 920 1700 C 1220 1640, 1420 1780, 1440 1720" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-        </g>
-        <g opacity="0.3">
-          <path d="M-140 1950 C 220 1880, 520 2020, 860 1960 C 1200 1900, 1400 2040, 1580 1980" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 2100 C 300 2040, 600 2160, 900 2100 C 1200 2040, 1400 2180, 1440 2120" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-          <path d="M-80 2250 C 240 2190, 540 2310, 840 2250 C 1140 2190, 1360 2330, 1500 2270" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-        </g>
-        <g opacity="0.26">
-          <path d="M0 2500 C 320 2440, 620 2560, 920 2500 C 1220 2440, 1420 2580, 1440 2520" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-          <path d="M-100 2650 C 260 2590, 560 2710, 860 2650 C 1160 2590, 1380 2730, 1540 2670" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 2800 C 300 2740, 600 2860, 900 2800 C 1200 2740, 1400 2880, 1440 2820" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-          <path d="M-60 2950 C 240 2890, 540 3010, 840 2950 C 1140 2890, 1360 3030, 1500 2970" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-        </g>
-        <g opacity="0.34">
-          <path d="M-120 3250 C 200 3180, 500 3320, 820 3260 C 1140 3200, 1340 3340, 1560 3280" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 3400 C 280 3340, 580 3460, 880 3400 C 1180 3340, 1380 3480, 1440 3420" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-          <path d="M-80 3550 C 240 3490, 540 3610, 840 3550 C 1140 3490, 1360 3630, 1500 3570" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 3700 C 320 3640, 620 3760, 920 3700 C 1220 3640, 1420 3780, 1440 3720" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-        </g>
-        <g opacity="0.24">
-          <path d="M-100 4050 C 260 3990, 560 4110, 860 4050 C 1160 3990, 1380 4130, 1540 4070" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 4200 C 300 4140, 600 4260, 900 4200 C 1200 4140, 1400 4280, 1440 4220" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-          <path d="M-60 4350 C 240 4290, 540 4410, 840 4350 C 1140 4290, 1360 4430, 1500 4370" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-        </g>
-        <g opacity="0.3">
-          <path d="M-140 4600 C 220 4540, 520 4660, 860 4600 C 1200 4540, 1400 4680, 1580 4620" stroke="var(--light-gray)" strokeWidth="1.5" fill="none"/>
-          <path d="M0 4750 C 300 4690, 600 4810, 900 4750 C 1200 4690, 1400 4830, 1440 4770" stroke="var(--light-gray)" strokeWidth="1" fill="none"/>
-        </g>
       </svg>
       <Header />
 
       {/* HERO */}
       <section id="hero" className="hero-root" ref={heroRef}>
-
-<div className="bg-name-marquee">
+        <div className="bg-name-marquee">
           <div className="bg-name-track" ref={marqueeTrackRef}>
-            <span className="bg-name-text">RICHARD MICULOB</span>
-            <span className="bg-name-text">RICHARD MICULOB</span>
+            <span className="bg-name-text">OGINNI OLUWATUNMISE</span>
+            <span className="bg-name-text">OGINNI OLUWATUNMISE</span>
           </div>
         </div>
 
-        {/* Mobile-only fill rows: 4 above + 4 below, same animation/style as the center row = 9 total */}
         {["t1", "t2", "t3", "t4", "b1", "b2", "b3", "b4"].map((pos) => (
           <div
             key={pos}
@@ -455,8 +334,8 @@ export default function Portfolio() {
             aria-hidden="true"
           >
             <div className="bg-name-track">
-              <span className="bg-name-text">RICHARD MICULOB</span>
-              <span className="bg-name-text">RICHARD MICULOB</span>
+              <span className="bg-name-text">OGINNI OLUWATUNMISE</span>
+              <span className="bg-name-text">OGINNI OLUWATUNMISE</span>
             </div>
           </div>
         ))}
@@ -468,7 +347,7 @@ export default function Portfolio() {
         </div>
 
         <div className="profile-wrap">
-          <img src="/images/profile.png" alt="RICHARD" className="profile-image" draggable={false} />
+          <img src="/images/profile.png" alt="OGINNI OLUWATUNMISE" className="profile-image" draggable={false} />
         </div>
 
         <div className="scroll-indicator">
@@ -482,9 +361,9 @@ export default function Portfolio() {
         <Reveal>
           <div className="work-header">
             <div>
-              <div className="section-label">Selected Work</div>
+              <div className="section-label">Selected Projects</div>
               <TypewriterTitle text="Work Gallery" />
-              <div className="section-desc">A collection of systems, digital projects, and technical work I've built.</div>
+              <div className="section-desc">A collection of quantitative models, operational audits, and systems I've managed.</div>
             </div>
             <Link href="/work" className="work-album-btn-top">
               View More Projects <ExternalLink size={14} />
@@ -497,7 +376,6 @@ export default function Portfolio() {
             <div className="work-album-inner">
               {PROJECTS.map((project, index) => {
                 const total = PROJECTS.length;
-
                 let diff = (index - activeIndex + total) % total;
                 if (diff > total / 2) diff -= total;
 
@@ -522,7 +400,7 @@ export default function Portfolio() {
 
                 return (
                   <div
-                    key={project.num}
+                    key={project.num || index}
                     className={`work-album-item${isCenter ? " work-album-item-center" : ""}`}
                     style={style}
                     onClick={() => !isCenter && goTo(index)}
@@ -546,19 +424,21 @@ export default function Portfolio() {
         </Reveal>
 
         <Reveal delay={200}>
-          <div className="work-info" key={activeProject.num}>
-            <h3 className="work-info-title">{activeProject.title}</h3>
-            <p className="work-info-desc">{activeProject.desc}</p>
+          {activeProject && (
+            <div className="work-info" key={activeProject.num || activeIndex}>
+              <h3 className="work-info-title">{activeProject.title}</h3>
+              <p className="work-info-desc">{activeProject.desc}</p>
 
-            <a
-              href={activeProject.link}
-              className="work-info-link"
-              target={activeProject.link !== "#" ? "_blank" : undefined}
-              rel="noopener noreferrer"
-            >
-              {activeProject.linkText}
-            </a>
-          </div>
+              <a
+                href={activeProject.link || "#"}
+                className="work-info-link"
+                target={activeProject.link && activeProject.link !== "#" ? "_blank" : undefined}
+                rel="noopener noreferrer"
+              >
+                {activeProject.linkText || "View Details"}
+              </a>
+            </div>
+          )}
         </Reveal>
       </section>
 
@@ -570,87 +450,9 @@ export default function Portfolio() {
               <div className="section-label">My Capabilities</div>
               <TypewriterTitle text="What I Can Do" />
               <div className="what-i-can-do-desc">
-                I combine technical, problem-solving, and digital skills to build reliable systems, test systems, manage data, and support efficient digital workflows.
+                I leverage strong quantitative skills, technical expertise in engineering, and financial analysis to optimize operations, perform audit reconciliations, and sustain high-value stakeholder relationships.
               </div>
-              <div className="tech-stack">
-                <div className="tech-stack-column">
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/html.png" alt="HTML" draggable={false} />
-                    <span className="tech-stack-label">HTML</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/css.png" alt="CSS" draggable={false} />
-                    <span className="tech-stack-label">CSS</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/js.png" alt="JavaScript" draggable={false} />
-                    <span className="tech-stack-label">JavaScript</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/react.png" alt="React" draggable={false} />
-                    <span className="tech-stack-label">React</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/python.png" alt="Python" draggable={false} />
-                    <span className="tech-stack-label">Python</span>
-                  </div>
-                </div>
-                <div className="tech-stack-column">
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/flask.png" alt="Flask" draggable={false} />
-                    <span className="tech-stack-label">Flask</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/django.png" alt="Django" draggable={false} />
-                    <span className="tech-stack-label">Django</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/php.png" alt="PHP" draggable={false} />
-                    <span className="tech-stack-label">PHP</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/codeigniter.png" alt="CodeIgniter" draggable={false} />
-                    <span className="tech-stack-label">CodeIgniter</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/logos/mysql.png" alt="MySQL" draggable={false} />
-                    <span className="tech-stack-label">MySQL</span>
-                  </div>
-                </div>
-                <div className="tech-stack-column workspace-column">
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/meta.png" alt="Meta" draggable={false} />
-                    <span className="tech-stack-label">Meta Suite</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/notion.png" alt="Notion" draggable={false} />
-                    <span className="tech-stack-label">Notion</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/google.png" alt="Google" draggable={false} />
-                    <span className="tech-stack-label">Google</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/trello.png" alt="Trello" draggable={false} />
-                    <span className="tech-stack-label">Trello</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/canva.png" alt="Canva" draggable={false} />
-                    <span className="tech-stack-label">Canva</span>
-                  </div>
-                </div>
-                <div className="tech-stack-column workspace-column">
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/figma.png" alt="Figma" draggable={false} />
-                    <span className="tech-stack-label">Figma</span>
-                  </div>
-                  <div className="tech-stack-item">
-                    <img src="/images/workspace/capcut.png" alt="CapCut" draggable={false} />
-                    <span className="tech-stack-label">CapCut</span>
-                  </div>
-            </div>
-          </div>
-        </Reveal>
+            </Reveal>
           </div>
 
           <div className="what-i-can-do-right">
@@ -660,18 +462,6 @@ export default function Portfolio() {
                   <div className="bento-header">
                     <div className="bento-number">{String(index + 1).padStart(2, "0")}</div>
                     <div className="bento-category">{group.group}</div>
-                  </div>
-
-                  <div className="bento-visual">
-                    {index === 0 && (
-                      <img src="/images/gif/coding.gif" alt="Web Development & QA" className="bento-gif" draggable={false} />
-                    )}
-                    {index === 1 && (
-                      <img src="/images/gif/assistant.gif" alt="Virtual Assistance" className="bento-gif" draggable={false} />
-                    )}
-                    {index === 2 && (
-                      <img src="/images/gif/social.gif" alt="Content & Digital" className="bento-gif" draggable={false} />
-                    )}
                   </div>
 
                   <p className="bento-desc">{group.description}</p>
@@ -692,7 +482,7 @@ export default function Portfolio() {
       <section id="about" className="section">
         <Reveal>
           <div className="section-label">ABOUT ME</div>
-          <TypewriterTitle text={isMobile ? "Problem Solver.\nDigital Generalist." : "Problem Solver. Digital Generalist."} />
+          <TypewriterTitle text={isMobile ? "Data-Driven Analyst.\nOperations Specialist." : "Data-Driven Analyst. Operations Specialist."} />
         </Reveal>
 
         <Reveal delay={100}>
@@ -703,34 +493,31 @@ export default function Portfolio() {
               </div>
               <div className="about-profile-info">
                 <div className="about-profile-name">
-                  RICHARD VICTOR M. MICULOB
+                  OGINNI OLUWATUNMISE FRUITFULNESS
                   <img src="/images/about/badge.png" alt="Verified" className="about-profile-badge" draggable={false} />
                 </div>
                 <div className="about-profile-stats">
                   <div className="about-stat-item">
-                    <span className="about-stat-label">PROJECTS</span>
-                    <span className="about-stat-value">20+</span>
+                    <span className="about-stat-label">LOCATION</span>
+                    <span className="about-stat-value">Lagos, Nigeria</span>
                   </div>
                   <div className="about-stat-item">
-                    <span className="about-stat-label">CERTIFICATES</span>
-                    <span className="about-stat-value">9</span>
+                    <span className="about-stat-label">SAVINGS AUDITED</span>
+                    <span className="about-stat-value">$3M+</span>
                   </div>
                   <div className="about-stat-item">
-                    <span className="about-stat-label">BSIT GRADUATED</span>
-                    <span className="about-stat-value">2026</span>
+                    <span className="about-stat-label">B.ENG GRADUATED</span>
+                    <span className="about-stat-value">2023</span>
                   </div>
                 </div>
                 <div className="about-description">
                   <p>
-                    I’m a BSIT graduate focused on software testing, web development, and digital systems. I enjoy turning ideas and real-world problems into practical digital solutions, particularly through web applications, databases, and system testing. Throughout my studies, I gained hands-on experience building database-driven systems and working with technologies such as RFID and QR-based solutions. My work was recognized through awards including Dean’s List, and Best Capstone Paper and System. I’ve also completed training in virtual assistance and AI-powered workflows, giving me experience across both technical and digital operations.
-                  </p>
-                  <p>
-                    Want to know more about my experience? <a href="/resume/Richard_Victor_Miculob_Resume.pdf" className="about-resume-link" target="_blank" rel="noopener noreferrer">Download my resume</a>.
+                    Data-driven Electrical & Electronics Engineering graduate and M.Sc. Energy Finance candidate, with a track record of financial reconciliation, quantitative reporting, and high-value stakeholder management across energy, facilities, and telecoms sectors. Skilled in translating operational data into commercial insight, resolving cross-functional bottlenecks, and sustaining zero-downtime service delivery for clients.
                   </p>
                 </div>
               </div>
             </div>
-            {/* CURRENTLY + CARD STACK */}
+
             <div className="about-bottom-row">
               <div className="currently-strip">
                 <div className="currently-strip-label">CURRENTLY</div>
@@ -758,47 +545,46 @@ export default function Portfolio() {
                   onMouseEnter={() => setCardPaused(true)}
                   onMouseLeave={() => setCardPaused(false)}
                 >
-                {CARDS.map((trait, i) => {
-                  const offset = (i - cardIndex + CARDS.length) % CARDS.length;
-                  const isExiting = offset === CARDS.length - 1;
-                  // Only the front 3 cards and the one that just got flicked away are rendered.
-                  if (offset > 2 && !isExiting) return null;
+                  {CARDS.map((trait, i) => {
+                    const offset = (i - cardIndex + CARDS.length) % CARDS.length;
+                    const isExiting = offset === CARDS.length - 1;
+                    if (offset > 2 && !isExiting) return null;
 
-                  const scatter = CARD_SCATTER[i];
-                  let style;
+                    const scatter = CARD_SCATTER[i];
+                    let style;
 
-                  if (isExiting) {
-                    style = {
-                      "--tx": `${scatter.x + 140}px`,
-                      "--ty": `${scatter.y - 60}px`,
-                      "--rot": `${scatter.rot + 40}deg`,
-                      "--sc": 0.85,
-                      "--op": 0,
-                      zIndex: 5,
-                    };
-                  } else {
-                    const depth = offset;
-                    style = {
-                      "--tx": `${scatter.x + depth * 10}px`,
-                      "--ty": `${scatter.y + depth * 8}px`,
-                      "--rot": `${scatter.rot + depth * (scatter.rot >= 0 ? 5 : -5)}deg`,
-                      "--sc": 1 - depth * 0.045,
-                      "--op": depth === 0 ? 1 : 0.55 + (2 - depth) * 0.15,
-                      zIndex: 30 - depth * 10,
-                    };
-                  }
+                    if (isExiting) {
+                      style = {
+                        "--tx": `${scatter.x + 140}px`,
+                        "--ty": `${scatter.y - 60}px`,
+                        "--rot": `${scatter.rot + 40}deg`,
+                        "--sc": 0.85,
+                        "--op": 0,
+                        zIndex: 5,
+                      };
+                    } else {
+                      const depth = offset;
+                      style = {
+                        "--tx": `${scatter.x + depth * 10}px`,
+                        "--ty": `${scatter.y + depth * 8}px`,
+                        "--rot": `${scatter.rot + depth * (scatter.rot >= 0 ? 5 : -5)}deg`,
+                        "--sc": 1 - depth * 0.045,
+                        "--op": depth === 0 ? 1 : 0.55 + (2 - depth) * 0.15,
+                        zIndex: 30 - depth * 10,
+                      };
+                    }
 
-                  return (
-                    <div
-                      key={trait}
-                      className={`card-stack-card${offset === 0 ? " card-stack-card-front" : ""}`}
-                      style={style}
-                    >
-                      <div className="card-stack-label">TRAIT</div>
-                      <div className="card-stack-value">{trait}</div>
-                    </div>
-                  );
-                })}
+                    return (
+                      <div
+                        key={trait}
+                        className={`card-stack-card${offset === 0 ? " card-stack-card-front" : ""}`}
+                        style={style}
+                      >
+                        <div className="card-stack-label">TRAIT</div>
+                        <div className="card-stack-value">{trait}</div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -806,73 +592,64 @@ export default function Portfolio() {
         </Reveal>
       </section>
 
-      {/* AWARDS */}
-      <section id="awards" className="section">
+      {/* EDUCATION */}
+      <section id="education" className="section">
         <Reveal>
-          <div className="section-label">Recognition</div>
-          <TypewriterTitle text="Awards and Achievements" />
-          <div className="section-desc">
-            A collection of academic and professional recognitions that reflect my dedication to excellence.
-          </div>
+          <div className="section-label">Academic Background</div>
+          <TypewriterTitle text="Education & Degrees" />
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="awards-layout">
-            <img src="/images/awards/awards.png" alt="Awards" className="awards-img" />
-            <div className="awards-column">
-              <a href="/awards/Dean_Lister.pdf" className="award-item" target="_blank" rel="noopener noreferrer">
+          <div className="awards-column" style={{ marginTop: '20px' }}>
+            <div className="award-item" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%' }}>
                 <div className="award-icon"><GraduationCap size={18} /></div>
-                <div className="award-title">Dean's Lister</div>
-                <ExternalLink size={12} style={{ marginLeft: 'auto', flexShrink: 0 }} />
-              </a>
-              <a href="/awards/Best_Capstone_Paper.pdf" className="award-item" target="_blank" rel="noopener noreferrer">
-                <div className="award-icon"><Trophy size={18} /></div>
-                <div className="award-title">Best Capstone Paper</div>
-                <ExternalLink size={12} style={{ marginLeft: 'auto', flexShrink: 0 }} />
-              </a>
-              <a href="/awards/Best_Capstone_System.pdf" className="award-item" target="_blank" rel="noopener noreferrer">
-                <div className="award-icon"><Trophy size={18} /></div>
-                <div className="award-title">Best Capstone System</div>
-                <ExternalLink size={12} style={{ marginLeft: 'auto', flexShrink: 0 }} />
-              </a>
+                <div className="award-title">M.Sc. Energy Finance (In View)</div>
+                <span style={{ marginLeft: 'auto', fontSize: '0.85rem', opacity: 0.7 }}>2026 - Present</span>
+              </div>
+              <div style={{ marginTop: '8px', fontSize: '0.9rem', opacity: 0.85 }}>
+                University of Ibadan Centre for Petroleum, Energy, Economics & Law
+              </div>
+              <div style={{ marginTop: '4px', fontSize: '0.8rem', opacity: 0.65 }}>
+                Relevant modules: Energy Finance & Project Management, Applied Econometrics, Micro & Macro Economics
+              </div>
+            </div>
+
+            <div className="award-item" style={{ flexDirection: 'column', alignItems: 'flex-start', marginTop: '15px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%' }}>
+                <div className="award-icon"><GraduationCap size={18} /></div>
+                <div className="award-title">B.Eng. Electrical & Electronics Engineering</div>
+                <span style={{ marginLeft: 'auto', fontSize: '0.85rem', opacity: 0.7 }}>2017 - 2023</span>
+              </div>
+              <div style={{ marginTop: '8px', fontSize: '0.9rem', opacity: 0.85 }}>
+                Osun State University, Osogbo
+              </div>
             </div>
           </div>
         </Reveal>
       </section>
-      <section id="trainings" className="section">
+
+      {/* EXPERIENCE / TRAININGS */}
+      <section id="experience" className="section">
         <Reveal>
-          <div className="section-label">Growth & Experience</div>
-          <TypewriterTitle text="Trainings & Hackathons" />
+          <div className="section-label">Professional Background</div>
+          <TypewriterTitle text="Work Experience" />
           <div className="section-desc">
-            A collection of trainings, workshops, and hackathons that shaped my technical and collaborative skills.
+            A history of driving operational efficiency, risk management, and financial auditing across sectors.
           </div>
         </Reveal>
 
         <div className="experience-list">
           {EXPERIENCE.map((exp, i) => (
-            <div key={i} className={`experience-card${exp.imageLeft ? " experience-card-reverse" : ""}`}>
+            <div key={i} className={`experience-card`}>
               <div className="experience-text">
                 <div className="experience-header">
-                  <div className="experience-title">
-                    {exp.title}
-                    {exp.subtitle && <div className="experience-subtitle">{exp.subtitle}</div>}
-                  </div>
+                  <div className="experience-title">{exp.title}</div>
                   <div className="experience-date">{exp.date}</div>
                 </div>
                 <div className="experience-org">{exp.org}</div>
                 <div className="experience-desc">{exp.desc}</div>
-                {exp.certificates && exp.certificates.map((cert, i) => (
-                  <div key={i}>
-                    <a href={cert.link} className="experience-certificate" target="_blank" rel="noopener noreferrer">
-                      {cert.name}
-                      <ExternalLink size={12} style={{ marginLeft: 6 }} />
-                    </a>
-                  </div>
-                ))}
               </div>
-              {exp.images && exp.images.length > 0 && (
-                <ExperienceImageStack images={exp.images} title={exp.title} />
-              )}
             </div>
           ))}
         </div>
@@ -893,56 +670,39 @@ export default function Portfolio() {
               </h2>
             </Reveal>
             <Reveal delay={200}>
-              <p className="contact-description">Looking for the next problem worth solving.</p>
+              <p className="contact-description">Open to new opportunities and strategic collaborations.</p>
             </Reveal>
             <Reveal delay={300}>
               <p className="contact-secondary">
-                I'm open to opportunities where I can contribute to software testing, web development, IT operations, and digital workflows.
+                I bring strong quantitative aptitude, operational excellence, and stakeholder management experience to customer-focused financial and operational roles.
               </p>
-            </Reveal>
-            <Reveal delay={400}>
-              <a href="/resume/Richard_Victor_Miculob_Resume.pdf" className="contact-resume-btn" target="_blank" rel="noopener noreferrer">DOWNLOAD RESUME →</a>
             </Reveal>
           </div>
 
           <div className="contact-right">
             <div className="contact-cards">
               <Reveal delay={200}>
-                <a href="mailto:miculobrichardvictor@gmail.com" className="contact-card" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:tunmisemayowa3@gmail.com" className="contact-card" target="_blank" rel="noopener noreferrer">
                   <span className="contact-card-number">01</span>
                   <div className="contact-card-icon">
                     <Mail size={20} />
                   </div>
                   <div className="contact-card-info">
                     <div className="contact-card-label">EMAIL</div>
-                    <div className="contact-card-value">miculobrichardvictor@gmail.com</div>
+                    <div className="contact-card-value">tunmisemayowa3@gmail.com</div>
                   </div>
                 </a>
               </Reveal>
               <Reveal delay={280}>
-                <a href="https://github.com/chardoxx-3" className="contact-card" target="_blank" rel="noopener noreferrer">
+                <a href="tel:+2349032836299" className="contact-card">
                   <span className="contact-card-number">02</span>
                   <div className="contact-card-icon">
-                    <Github size={20} />
+                    <ExternalLink size={20} />
                   </div>
                   <div className="contact-card-info">
-                    <div className="contact-card-label">GITHUB</div>
-                    <div className="contact-card-value">github.com/chardoxx-3</div>
+                    <div className="contact-card-label">PHONE</div>
+                    <div className="contact-card-value">+234 903 283 6299</div>
                   </div>
-                  <ExternalLink size={16} className="contact-card-arrow" />
-                </a>
-              </Reveal>
-              <Reveal delay={360}>
-                <a href="https://www.linkedin.com/in/richard-victor-miculob/" className="contact-card" target="_blank" rel="noopener noreferrer">
-                  <span className="contact-card-number">03</span>
-                  <div className="contact-card-icon">
-                    <Linkedin size={20} />
-                  </div>
-                  <div className="contact-card-info">
-                    <div className="contact-card-label">LINKEDIN</div>
-                    <div className="contact-card-value">linkedin.com/in/richard-victor-miculob</div>
-                  </div>
-                  <ExternalLink size={16} className="contact-card-arrow" />
                 </a>
               </Reveal>
             </div>
@@ -985,29 +745,29 @@ export default function Portfolio() {
                 className="contact-modal-form"
                 onSubmit={async (e) => {
                   e.preventDefault();
-                  const form = e.target;
+                  const form = e.target as HTMLFormElement;
                   const data = {
-                    name: form.name.value.trim(),
-                    email: form.email.value.trim(),
-                    message: form.message.value.trim(),
+                    name: (form.elements.namedItem("name") as HTMLInputElement).value.trim(),
+                    email: (form.elements.namedItem("email") as HTMLInputElement).value.trim(),
+                    message: (form.elements.namedItem("message") as HTMLTextAreaElement).value.trim(),
                   };
 
                   setFormStatus("submitting");
 
-                   try {
-                     await fetch('https://script.google.com/macros/s/AKfycbz68sln0VIOOVOegEYiQLJwTdLonmPHMzq8jqzWCaqdgUAG2-LWxJVuRaEM5HQl6ABH/exec', {
-                       method: 'POST',
-                       mode: 'no-cors',
-                       headers: { 'Content-Type': 'application/json' },
-                       body: JSON.stringify(data),
-                     });
-                     setFormStatus("success");
-                     form.reset();
-                     setIsModalOpen(false);
-                     setShowSuccessModal(true);
-                   } catch (error) {
-                     setFormStatus("error");
-                   }
+                  try {
+                    await fetch('https://script.google.com/macros/s/AKfycbz68sln0VIOOVOegEYiQLJwTdLonmPHMzq8jqzWCaqdgUAG2-LWxJVuRaEM5HQl6ABH/exec', {
+                      method: 'POST',
+                      mode: 'no-cors',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify(data),
+                    });
+                    setFormStatus("success");
+                    form.reset();
+                    setIsModalOpen(false);
+                    setShowSuccessModal(true);
+                  } catch (error) {
+                    setFormStatus("error");
+                  }
                 }}
               >
                 <div className="contact-modal-field">
@@ -1022,7 +782,7 @@ export default function Portfolio() {
 
                 <div className="contact-modal-field contact-modal-field--grow">
                   <label className="contact-modal-label">Message</label>
-                  <textarea rows="6" name="message" className="contact-modal-input" placeholder="Tell me about your project..." required />
+                  <textarea rows={6} name="message" className="contact-modal-input" placeholder="Tell me about your opportunity..." required />
                 </div>
 
                 <button type="submit" className="contact-modal-submit" disabled={formStatus === "submitting"}>
